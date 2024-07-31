@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .loader {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 3px solid #ed775b;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@layer components {
+    .my-container {
+        @apply max-w-[1408px] mx-auto;
+    }
+    .my-containerNew {
+        @apply max-w-[1708px] mx-auto;
+    }
+
+    .insight-link {
+        @apply flex items-center justify-center gap-4 lg:gap-3 h-10 lg:h-[52px] w-[134px] lg:w-[192px] bg-primary-500 text-white hover:opacity-75 rounded-md;
+    }
+
+    .insight-link > span {
+        @apply text-sm xl:text-lg font-medium;
+    }
+
+    .insight-link > svg {
+        @apply text-xl lg:text-2xl;
+    }
+
+    .menu-item-link {
+        @apply flex items-center justify-start gap-4 text-base text-secondary-900 hover:opacity-75 min-w-44;
+    }
+
+    .menu-item-link > span {
+        @apply w-8 h-8 relative flex items-center justify-center;
+    }
+
+    .menu-item-link > img {
+        @apply object-contain;
+    }
+
+    .menu-item-link > p {
+        @apply text-base;
+    }
+
+    .filter-item-button {
+        @apply flex items-center gap-4 justify-start w-full cursor-pointer hover:opacity-75 text-base text-secondary-800 font-medium;
+    }
+
+    .filter-item-button > input {
+        @apply w-4 h-4 rounded accent-main border-secondary-500;
+    }
+}

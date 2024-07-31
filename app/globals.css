@@ -1,0 +1,40 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'shabnam';
+  src: url('/font/shabnam/Shabnam-FD.ttf');
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/font/IRANSansWeb.woff2');
+}
+
+@font-face {
+  font-family: 'IRANSansMedium';
+  src: url('/font/IRANSansWeb_Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/font/Poppins/PoppinsLatin-Regular.ttf');
+}
+
+* {
+  direction: rtl;
+  font-size: 16px;
+  font-family: IRANSans;
+}
+
+.container {
+  padding:0 2.5% !important;
+}
+* {
+  direction: rtl;
+}
+body {
+  background-color: #F4F4F4;
+}

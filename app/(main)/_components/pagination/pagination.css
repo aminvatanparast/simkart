@@ -1,0 +1,29 @@
+.pagination {
+  margin: 25px 0;
+}
+.pagination ul {
+  display: flex;
+}
+.pagination ul .selected a {
+  background: #050A44;
+  color: white;
+}
+.pagination ul li a {
+  padding: 5px 15px;
+  color: #050A44;
+  cursor: pointer;
+  border: 1px solid #050A44;
+  border-radius: 5px;
+  min-width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+  .pagination ul li a {
+    font-size: .7rem;
+    padding: 2px 10px;
+  }
+}
